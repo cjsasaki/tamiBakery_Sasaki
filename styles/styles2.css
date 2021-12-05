@@ -1,0 +1,1023 @@
+/* Hoja de estilos para el site */
+/*Paleta de colores::
+#C85C5C Rojo
+#F9975D Naranja
+#FBD148 Amarillo
+#B2EA70 Verde
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size : 16px; /*para utilizar REM*/
+   
+}
+/*font para toda la página*/
+body{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.header{
+    display:flex;
+    
+    justify-content:space-between;
+    align-items:center;
+    padding:0.5rem 20px;
+    background-color:#C85C5C;
+    width:100%;
+    border-bottom:2px solid #F9975D;
+    height:8vh;
+
+}
+.nav{
+    width:100%;
+}
+.header__logoImg{
+    width:40px;
+    
+}
+
+.header__links{
+    display:flex;
+    
+    align-items:center;
+    width:70%
+    
+
+}
+
+.nav__menu{ 
+    display:flex;
+    list-style-type: none;/*Quitar las viñetas de la lista*/
+    justify-content: space-evenly;
+    
+}
+
+.nav__activeLink{
+    text-decoration: underline;
+}
+.nav__menu a { 
+    text-decoration: none;/*Quitar los subrayados de links del menú */
+    font-size:1.3rem;
+    color:#F9975D;
+}
+
+.nav__img-rssSize{
+    width:20px;
+}
+
+.header__rrss{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    width:50%;
+    
+}
+
+.rrss__links{
+    display:flex;
+    justify-content:space-around;
+    width:40%;
+}
+.header__rrss a { 
+    text-decoration: none;/*Quitar los subrayados de links del menú */
+    font-size:1.3rem;
+    color:#F9975D;
+    
+    
+}
+
+.carruselImagenes{
+    background-color:#F9975D;
+    height:92vh;
+  
+}
+.carruselImagenes__carrusel{ 
+   display:inline-block;
+   position: relative;
+   text-align: center;
+   width:100%;
+}
+
+.carruselImagenes__imagen{
+     
+    align-content: center;
+    width:100%;
+    height:92vh;
+}
+.carruselImagenes_texto{
+    position: absolute;
+    bottom:40%;
+    left:5%;
+    font-family: 'Bebas Neue', cursive;
+    font-size:4rem;
+    color:#F9975D;
+}
+
+.masPedido{
+    background-color: #FBD148;
+    border-bottom:2px solid #F9975D;
+    padding-top:10px;
+    padding-bottom:10px;
+    
+
+}
+.masPedido__titulo{
+    vertical-align: middle;
+    font-family: 'Bebas Neue', cursive;
+    font-size:2rem;
+    text-align: center;
+    padding-top: 20px;
+    
+
+}
+.masPedido__productos{
+    display:flex;
+    flex-wrap:wrap;
+    vertical-align:middle;
+    justify-content: space-around;
+
+}
+
+.masPedido__imagenProducto{
+    width:250px;
+    height:250px;
+}
+.masPedido__producto{
+    vertical-align:top;
+    display:inline-block;
+    text-align:center;
+    width:250px;
+    
+    margin-left:20px;
+    margin-right:20px;
+}
+.masPedido__captionProducto{
+    display:block;
+    font-family: 'Bebas Neue', cursive;
+    color:#F9975D;
+    font-size:1.5rem;
+}
+
+.footer{
+    display : flex;
+    background-color:#B2EA70;
+    width:100%;
+    padding:0.5rem 20px;
+    justify-content:space-between;
+    align-items:center;
+}
+.footer__logoBox{
+    display:flex;
+    height:100%;
+    width:20%;
+    align-items:center;
+    
+}
+.footer__logoImg{
+    width:30px;
+
+
+}
+
+.footer__logoBox a{
+    color:#F9975D;
+    height:100%;
+    padding-left:10px;
+
+}
+.footer__rrss{
+    width:30%;
+    display:flex;
+    justify-content:flex-end;
+
+    
+}
+
+.footer__rrss a{
+    padding-right: 10px;
+    padding-left:10px;
+    color:#F9975D;
+}
+
+.tami{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 4fr auto 3fr; /*4 filas*/
+    justify-items: center;
+    align-items: center;
+    justify-content: stretch;
+    grid-template-areas:
+    "title title title"
+    "photo bio bio"
+    "quote quote quote"
+    "photo2 photo3 photo4";
+    background-color: #F9975D;
+    
+
+}
+
+.tami__titulo{
+    grid-area:title;
+    text-align:center;
+    font-size:3rem;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-bottom:10px;
+    
+
+}
+.tami__photo{
+    grid-area:photo;
+    padding-left:20px;
+    padding-right:20px;
+    
+    
+}
+.tami__bioPic{
+    width:100%
+
+}
+.tami__bioText{
+    grid-area:bio;
+    height:100%;
+    
+    
+}
+.tami__quote{
+    grid-area:quote;
+    background-color:#FBD148;
+    width:100%;
+    font-size:4rem;
+    text-align:center;
+    vertical-align:middle;
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+.tami__photo2{
+    grid-area:photo2;
+    
+
+}
+.tami__pictureSmallSize{
+    width:350px;
+}
+
+.tami__photo3{
+    grid-area:photo3;
+}
+.tami__photo4{
+    grid-area:photo4;
+}
+
+/* Tienda.html*/
+
+.tienda{
+    background-color: #F9975D;
+    
+}
+.tienda__titulo{
+    display:block;
+    font-family: 'Bebas Neue', cursive;
+    font-size:3rem;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+}
+.tienda__productos{
+    width:100%; 
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    align-items: center;
+}
+.tienda__producto{
+    vertical-align:top;
+    display:inline-block;
+    text-align:center;
+    width:250px;
+    
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.tienda__imagenProducto{
+    width:250px;
+    height:250px;
+
+}
+.tienda__captionProducto{
+    display:block;
+    font-family: 'Bebas Neue', cursive;
+    color:black;
+    font-size:1rem;
+    text-decoration:none;
+
+}
+.tienda__contactanos{
+    display:flex;
+    justify-content: center;
+    margin-top:30px;
+    padding-bottom:20px;
+    text-align: center;
+}
+.tienda__contactanosMensaje{
+    font-family: 'Bebas Neue', cursive;
+    color:black;
+    font-size:2rem;
+}
+.tienda__contactanosLink{
+    font-family: 'Bebas Neue', cursive;
+    color:black;
+    font-size:2rem;
+    /*se deja con el subrayado en el link para que se vea que hay hipervinculo*/
+   
+
+}
+
+/*--recetas.html--*/
+.recetas{
+    background-color: #F9975D;
+    height:auto;
+    
+
+}
+.recetas__titulo{
+    display:block;
+    font-family: 'Bebas Neue', cursive;
+    font-size:3rem;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+}
+.recetas__postres{
+    
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    justify-content: space-around;
+       
+}
+.recetas__postre{
+    vertical-align:top;
+    display:inline-block;
+    width:600px;
+    
+    text-align: center;
+    margin:5px;
+}
+.recetas__imagenPostre{
+    width:250px;
+    height:250px;
+    display:inline-block;
+    vertical-align: middle;
+
+    margin-bottom:10px;
+    margin-top:10px;
+}
+.recetas__textoPostre{
+    
+    display:inline-block;
+    width:250px;
+    height:250px;
+    text-align: center;
+    vertical-align:top;   
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom:10px;
+    margin-top:10px;
+    
+  
+}
+.recetas__tituloPostre{
+    font-family: 'Bebas Neue', cursive;
+    font-size:1.5rem;
+    text-align:center;
+}
+
+
+.recetas__linkText{
+    text-align:center;
+    font-size:3rem;
+    display: block;
+    margin:10px;
+    padding:0;   
+    height:40px;
+    
+}
+
+.recetas__linkVideo{
+    text-decoration: none;
+    font-size:1.5rem;
+}
+
+.recetas__mensajeFinal{
+    text-align:center;
+    
+    font-size:2rem;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+/*---contactanos.html---*/
+
+.contactanos{
+    display:grid;
+    grid-template-columns : 1fr 1fr;
+    grid-template-rows : 10vh 70vh 15vh;
+    grid-template-areas: 
+    "titulo titulo"
+    "imagen formulario"
+    "imagen mensaje";
+    background-color: #F9975D;
+    justify-items:center;
+    width:100%;
+    
+}
+
+
+.contactanos__titulo{
+    grid-area:titulo;
+    align-self:center;
+    font-size:2rem;
+    
+}
+.contactanos__inputBox{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.contactanos__formulario{
+    grid-area:formulario;
+    align-self:center;
+    display:flex;
+}
+.contactanos__imagen{
+    grid-area:imagen;
+}
+.contactanos__imagen--Size{
+    height:100%;
+}
+.contactanos__mensaje{
+    grid-area:mensaje;
+    font-size:1.5rem;
+    text-align:center;
+    width:100%;
+}
+.contactanos__botones{
+    margin-top:10px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contactanos__boton{
+    font-family: 'Bebas Neue', cursive;
+    background-color: #B2EA70;
+    width:150px;
+}
+
+
+
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 390px) { /* iphone 13 tiene  width de 390px*/
+    
+    /*Header : */
+    .header__rrss{
+        display:none; /* no se muestran iconos de rrss porque ya están en el Footer*/
+
+    }
+
+    .nav__menu a { 
+        text-decoration: none;/*Quitar los subrayados de links del menú */
+        font-size:1rem;
+        color:#F9975D;
+    }
+    .header__links{
+        display:flex;   
+        align-items:center;
+        width:100%   
+    }
+
+    /*Footer : */
+    .rrss__mensaje{
+        display:none;
+    }
+    .footer__logoBox{
+        display:flex;
+        height:100%;
+        width:50%;
+        align-items:center;   
+    }
+    .footer__logoBox a {
+        font-size:0.8rem;
+    }
+
+    /******index.html *********/
+    /*---Carrusel de Imagenes---*/
+    .carruselImagenes_texto{
+        position: absolute;
+        top:40%;
+        left:5%;
+        font-size:2rem;
+        color:#F9975D;
+    }
+    .carruselImagenes{
+        background-color:#F9975D;
+        height:50vh;
+      
+    }
+    .carruselImagenes__imagen{
+     
+        align-content: center;
+        width:100%;
+        height:50vh;
+    }
+
+    /*---Mas Pedido---*/
+  
+    .masPedido__titulo{
+        vertical-align: middle;
+        font-family: 'Bebas Neue', cursive;
+        font-size:1.5rem;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .masPedido__imagenProducto{
+        width:150px;
+        height:150px;
+    }
+    .masPedido__producto{
+        width:150px;
+        margin-left:5px;
+        margin-right:5px;
+    }
+    .masPedido__captionProducto{
+        font-size:1rem;
+        padding-bottom:15px;
+    }
+
+
+    /******Tami.html *********/
+
+    .tami{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto; /*4 filas*/
+        justify-items: center;
+        align-items: center;
+
+        grid-template-areas:
+        "title"
+        "photo"
+        "bio"
+        "quote"
+        "photo2"
+        "photo3" 
+        "photo4";
+        background-color: #F9975D;
+        
+    
+    }
+    .tami__titulo{
+        grid-area:title;
+        text-align:center;
+        font-size:2rem;
+        padding-top:5px;
+        padding-bottom:5px;
+        
+        
+    
+    }
+    .tami__photo{
+        grid-area:photo;
+        padding-left:5px;
+        padding-right:5px;
+        
+        
+    }
+
+    .tami__quote{
+        grid-area:quote;
+        background-color:#FBD148;
+        width:100%;
+        font-size:1.5rem;
+        text-align:center;
+        vertical-align:middle;
+        padding-top:5px;
+        padding-bottom:5px;
+    
+    }
+    .tami__bioText{
+        grid-area:bio;
+        height:100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom:10px;
+    }
+    .tami__pictureSmallSize{
+        width:70%;
+
+    }
+    .tami__photo2{
+        grid-area:photo2;
+        text-align: center;
+        padding-top:10px;
+    }
+    
+    .tami__photo3{
+        grid-area:photo3;
+        text-align: center;
+        padding-top:10px;
+    }
+    .tami__photo4{
+        grid-area:photo4;
+        text-align: center;
+        padding-top:10px;
+    }
+     /******Tienda.html *********/
+    
+     .tienda__imagenProducto{
+        width:150px;
+        height:150px;
+    
+    }
+    .tienda__producto{
+        vertical-align:top;
+        display:inline-block;
+        text-align:center;
+        width:150px;
+        
+        margin-left:5px;
+        margin-right:5px;
+        margin-top:5px;
+        margin-bottom:10px;
+    }
+    .tienda__captionProducto{
+        font-size:0.8rem;
+        text-decoration:none;
+    
+    }
+    .tienda__contactanos{
+        display:flex;
+        justify-content: center;
+        margin-top:10px;
+        padding-bottom:10px;
+        text-align: center;
+    }
+    .tienda__contactanosMensaje{
+        font-size:1rem;
+    }
+    .tienda__contactanosLink{
+        font-size:1rem;
+        /*se deja con el subrayado en el link para que se vea que hay hipervinculo*/
+       
+    
+    }
+    /*---recetas.html---*/
+    .recetas{
+        background-color: #F9975D;
+    }
+
+    .recetas__titulo{
+        font-size:1.5rem;
+
+    }
+    .recetas__imagenPostre{
+        width:150px;
+        height:150px;
+        
+    }
+    .recetas__postres{
+        
+        display:flex;
+        flex-wrap:wrap;
+           
+    }
+    .recetas__postre{
+        
+        margin:5px;
+    }
+
+    .recetas__textoPostre{
+        margin-bottom:5px;
+        margin-top:5px;
+        height:auto;
+      
+    }
+    .recetas__tituloPostre{
+        font-size:1rem;
+    }
+    
+    
+    .recetas__linkText{
+        font-size:2rem;
+        margin:5px;
+        padding:0;   
+        
+    }
+    
+    .recetas__linkVideo{
+        font-size:1rem;
+    }
+    
+    .recetas__mensajeFinal{
+        font-size:1.5rem;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+
+    /*--contactanos.html*/
+    .contactanos{
+        display:grid;
+        grid-template-columns : 1fr;
+        grid-template-rows : 5vh 40vh 40vh 10vh;
+        grid-template-areas: 
+        "titulo"
+        "imagen"
+        "formulario"
+        "mensaje";
+        background-color: #F9975D;
+        justify-items:center;
+        
+        
+    }
+
+
+
+.contactanos__titulo{
+    font-size:1rem;
+    
+}
+.contactanos__inputBox{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.contactanos__formulario{
+    grid-area:formulario;
+}
+.contactanos__imagen{
+    grid-area:imagen;
+}
+.contactanos__imagen--Size{
+    width:100%;
+}
+.contactanos__mensaje{
+    grid-area:mensaje;
+    font-size:1rem;
+    text-align:center;
+    width:100%;
+    text-align:center;
+}
+.contactanos__botones{
+    margin-top:10px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contactanos__boton{
+    font-family: 'Bebas Neue', cursive;
+    background-color: #B2EA70;
+    width:150px;
+}
+}
+  /*FIN Smartphones (portrait) ----------- */
+
+
+
+@media only screen and (min-width : 390px) and (max-width : 1024px) {
+
+    
+    /*Header : */
+    .header__rrss{
+        display:none; /* no se muestran iconos de rrss porque ya están en el Footer*/
+
+    }
+
+    .nav__menu a { 
+        text-decoration: none;/*Quitar los subrayados de links del menú */
+        font-size:1rem;
+        color:#F9975D;
+    }
+    .header__links{
+        display:flex;   
+        align-items:center;
+        width:100%   
+    }
+
+    /*Footer : */
+    .rrss__mensaje{
+        display:none;
+    }
+    .footer__logoBox{
+        display:flex;
+        height:100%;
+        width:50%;
+        align-items:center;   
+    }
+    .footer__logoBox a {
+        font-size:0.8rem;
+    }
+      /*--contactanos.html*/
+      .contactanos{
+        display:grid;
+        grid-template-columns : 1fr;
+        grid-template-rows : 5vh 40vh 40vh 10vh;
+        grid-template-areas: 
+        "titulo"
+        "imagen"
+        "formulario"
+        "mensaje";
+        background-color: #F9975D;
+        justify-items:center;
+        
+        
+    }
+    .tami{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto; /*4 filas*/
+        justify-items: center;
+        align-items: center;
+
+        grid-template-areas:
+        "title"
+        "photo"
+        "bio"
+        "quote"
+        "photo2"
+        "photo3" 
+        "photo4";
+        background-color: #F9975D;
+        
+    
+    }
+    .tami__titulo{
+        grid-area:title;
+        text-align:center;
+        font-size:2rem;
+        padding-top:5px;
+        padding-bottom:5px;
+        
+        
+    
+    }
+    .tami__photo{
+        grid-area:photo;
+        padding-left:5px;
+        padding-right:5px;
+        
+        
+    }
+
+    .tami__quote{
+        grid-area:quote;
+        background-color:#FBD148;
+        width:100%;
+        font-size:1.5rem;
+        text-align:center;
+        vertical-align:middle;
+        padding-top:5px;
+        padding-bottom:5px;
+    
+    }
+    .tami__bioText{
+        grid-area:bio;
+        height:100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom:10px;
+    }
+    .tami__pictureSmallSize{
+        width:70%;
+
+    }
+    .tami__photo2{
+        grid-area:photo2;
+        text-align: center;
+        padding-top:10px;
+    }
+    
+    .tami__photo3{
+        grid-area:photo3;
+        text-align: center;
+        padding-top:10px;
+    }
+    .tami__photo4{
+        grid-area:photo4;
+        text-align: center;
+        padding-top:10px;
+    }
+    .contactanos{
+        display:grid;
+        grid-template-columns : 1fr;
+        grid-template-rows : 5vh 40vh 40vh 10vh;
+        grid-template-areas: 
+        "titulo"
+        "imagen"
+        "formulario"
+        "mensaje";
+        background-color: #F9975D;
+        justify-items:center;
+        
+        
+    }
+    .contactanos__titulo{
+        font-size:1rem;
+        
+    }
+    .contactanos__inputBox{
+        display:flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+    .contactanos__formulario{
+        grid-area:formulario;
+        padding-top:10px;
+    }
+    .contactanos__imagen{
+        grid-area:imagen;
+    }
+    .contactanos__imagen--Size{
+        width:100%;
+    }
+    .contactanos__mensaje{
+        grid-area:mensaje;
+        font-size:1rem;
+        padding-top:10px;
+        
+        width:100%;
+        text-align:center;
+    }
+    .contactanos__botones{
+        margin-top:10px;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .contactanos__boton{
+        font-family: 'Bebas Neue', cursive;
+        background-color: #B2EA70;
+        width:150px;
+    }
+
+    /*---recetas.html---*/
+    .recetas{
+        background-color: #F9975D;
+    }
+
+    .recetas__titulo{
+        font-size:1.5rem;
+
+    }
+    .recetas__imagenPostre{
+        width:150px;
+        height:150px;
+        
+    }
+    .recetas__postres{
+        
+        display:flex;
+        flex-wrap:wrap;
+           
+    }
+    .recetas__postre{
+        
+        margin:5px;
+    }
+
+    .recetas__textoPostre{
+        margin-bottom:5px;
+        margin-top:5px;
+        height:auto;
+      
+    }
+    .recetas__tituloPostre{
+        font-size:1rem;
+    }
+    
+    
+    .recetas__linkText{
+        font-size:2rem;
+        margin:5px;
+        padding:0;   
+        
+    }
+    
+    .recetas__linkVideo{
+        font-size:1rem;
+    }
+    
+    .recetas__mensajeFinal{
+        font-size:1.5rem;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+}
