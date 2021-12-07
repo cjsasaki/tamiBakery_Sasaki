@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/cupcake.png">
-    <!--VInculación externa de CSS-->
+    <!--Vinculación externa de CSS-->
     <link rel="stylesheet" href="styles/styles2.css">
+    <!--Vinculación de animate.style usando CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Se agrega fonts de google-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
@@ -17,7 +19,6 @@
 <body>
     <!--Barra de navegación con Logo y páginas-->
     <header class="header"> 
-
         <div class="header__links">
             <img class="header__logoImg"  src="assets/cupcakeLogo.svg" alt="Site Logo">
             <!-- Navegación-->
@@ -30,9 +31,6 @@
                     <li class="nav__links"><a href="pages/contactanos.html">CONTÁCTANOS</a></li>
             </nav> 
         </div>
-
-        
-
             <!--Redes sociales-->
         <div class="header__rrss">
             <div class="rrss__links">
@@ -46,22 +44,21 @@
     </header>
     <!--Fin de Barra de navegación con Logo y páginas-->
 
-
     <!--Contenido principal con Grid-->
     <!--Inicio de Carrusel de imagenes-->
-   <section class="carruselImagenes"> <!-- Contenedor paraCarrusel de imagenes para luego-->
+   <section class="carruselImagenes">
         <div class="carruselImagenes__carrusel">
             <img src="assets/mainPageAssets/cake_main.jpg"  alt="torta Principal" 
             class="carruselImagenes__imagen">
-            <div class="carruselImagenes_texto">Tortas y postres con diseño personalizado</div>
+            <!--Animación de animate.style-->
+            <div class="carruselImagenes_texto animate__animated animate__backInUp animate__slower" >Tortas y postres con diseño personalizado</div>
         </div>
     </section>
 <!--Fin de Carrusel de imagenes-->
-<!--Inicio de lo más pedido-->  
 
+<!--Inicio de lo más pedido-->  
     <section class="masPedido">
         <div class="masPedido__titulo">Lo más pedido:</div>
-    
     <div class="masPedido__productos">
         <div class="masPedido__producto">
             <img class="masPedido__imagenProducto" src="assets/mainPageAssets/lomaspedido/rainbowcake.jpg" alt="rainbow cake" >
@@ -83,7 +80,6 @@
     </div>
 <!--Fin de Los más pedidos-->
 
-
 <!--Footer -->
 <footer class="footer">
     <div class="footer__logoBox" >
@@ -98,7 +94,6 @@
         <a href="https://www.youtube.com/"><img class="nav__img-rssSize" src="assets/youtube_logo_icon.png" alt="youtube"></a>
     </div>      
 </footer>
-
 
 </body>
 </html>
