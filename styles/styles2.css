@@ -349,16 +349,13 @@ body{
 .producto__card:hover{ /*Al pasar con el mouse al producto se volteará para ver una descripción*/
     transform:rotateY(180deg);
 }
-
-
-
-
-
+.productoCard__añadirCarrito{
+    background-color:#FBD148;
+}
 
 .tienda__imagenProducto{
     width:250px;
     height:250px;
-
 }
 .tienda__captionProducto{
     display:block;
@@ -725,9 +722,44 @@ body{
     }
     .tienda__contactanosLink{
         font-size:1rem;
-        /*se deja con el subrayado en el link para que se vea que hay hipervinculo*/
-       
+        /*se deja con el subrayado en el link para que se vea que hay hipervinculo*/    
+    }
+    .producto__card{
+        height:150px;
+        width:150px;
+        position:relative;
+        transition: all 0.5s linear;
+        transform-style:preserve-3d;
+    }
     
+    .productoCard__front{
+        justify-content:center;
+        align-items:center;
+        position:absolute;
+        display:flex;
+        width:100%;
+        height:100%;
+        background:linear-gradient(#F9975D,#B2EA70);
+        z-index:2;
+        backface-visibility:hidden;
+    }
+    .productoCard__back{
+        justify-content:center;
+        align-items:center;
+        display:flex;
+        flex-flow:column;
+        vertical-align: middle;
+        position:absolute;
+        color:#F9975D;
+        width:100%;
+        height:90%;
+        border-radius:10px;
+        background:linear-gradient(#B2EA70,#FBD148);
+        z-index:1;
+        transform:rotateY(180deg) /*Para que el Back se vea de forma correcta*/
+    }
+    .producto__card:touch-action { /*Al pasar con el mouse al producto se volteará para ver una descripción*/
+        transform:rotateY(180deg);
     }
     /*---recetas.html---*/
     .recetas{
@@ -1075,5 +1107,8 @@ body{
         font-size:1.5rem;
         padding-top:10px;
         padding-bottom:10px;
+    }
+    .producto__card:touch-action{ /*Al pasar con el mouse al producto se volteará para ver una descripción*/
+        transform:rotateY(180deg);
     }
 }
