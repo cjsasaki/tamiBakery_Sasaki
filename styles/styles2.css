@@ -524,7 +524,14 @@ body{
     font-family: 'Bebas Neue', cursive;
     background-color: #B2EA70;
     width:150px;
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
 }
+.contactanos__boton:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 
 
@@ -1112,3 +1119,16 @@ body{
         transform:rotateY(180deg);
     }
 }
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
