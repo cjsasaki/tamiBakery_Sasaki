@@ -19,7 +19,6 @@ body{
 
 .header{
     display:flex;
-    
     justify-content:space-between;
     align-items:center;
     padding:0.5rem 20px;
@@ -29,11 +28,42 @@ body{
     height:8vh;
 
 }
+.navbar-custom{ /*Bootstrap*/
+    background-color:#C85C5C !important;
+    color:#F9975D !important;
+}
+.nav-link-custom{ /*Bootstrap*/
+    color:#F9975D !important;
+    font-size: 1.3rem;
+}
+.carousel-caption{
+    position:absolute;
+    bottom:40%;
+    color:#F9975D !important;
+}
+.carousel-control-prev-icon{
+    color:#F9975D !important;
+}
+.carousel-control{
+    color:#F9975D !important;
+}
+
+
+.carruselImagenes_texto{
+    position: absolute;
+    
+    font-family: 'Bebas Neue', cursive;
+    font-size:4rem;
+    color:#F9975D;
+}
+
+/**/
+
 .nav{
     width:100%;
 }
 .header__logoImg{
-    width:40px;
+    width:30px;
     
 }
 
@@ -87,9 +117,7 @@ body{
 .header__rrss a { 
     text-decoration: none;/*Quitar los subrayados de links del menú */
     font-size:1.3rem;
-    color:#F9975D;
-    
-    
+    color:#F9975D;  
 }
 
 .carruselImagenes{
@@ -110,14 +138,7 @@ body{
     width:100%;
     height:92vh;
 }
-.carruselImagenes_texto{
-    position: absolute;
-    bottom:40%;
-    left:5%;
-    font-family: 'Bebas Neue', cursive;
-    font-size:4rem;
-    color:#F9975D;
-}
+
 
 .masPedido{
     background-color: #FBD148;
