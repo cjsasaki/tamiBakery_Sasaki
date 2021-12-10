@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
         <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
-            <img class="header__logoImg"  src="assets/cupcakeLogo.svg" alt="Site Logo">
+            <img class="header__logoImg"  src="../assets/cupcakeLogo.svg" alt="Site Logo">
         </a>
         <!--Menú Hamburguesa-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,48 +52,38 @@
     </nav><!--Fin de NavBar-->
             
         <!-- formulario de contacto-->
-    <section class="contactanos">
-        <div class="contactanos__titulo">Contáctanos</div>
-        <!--Formulario-->
-        <div class="contactanos__imagen">
-            <img class="contactanos__imagen--Size" src="../assets/contactanos/contactanosImage.jpg" alt="imagen contactanos">
-        </div>
-        <div class="contactanos__formulario">
-            <form action="#">   
-                <div class="contactanos__nombre contactanos__inputBox">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="Dinos tu nombre" name= "nombre">
+    
+        <div class="container mt-5 contactanos">
+            <h1 class=contactanos__titulo>Contactáctanos</h1>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
                 </div>
-                <div class="contactanos__email contactanos__inputBox">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" placeholder="nombre@mail.com" name="email">
+                <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" required>
                 </div>
-                
-                <div class="contactanos__telefono contactanos__inputBox">
-                    <label for="telefono">Telefono</label><input type="tel" placeholder ="Telefono" name="telefono">
+                <div class="col-md-8">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" required>
                 </div>
-                
-                <!-- Comentarios-->
-                <div class="contactanos__mensaje">
-                    <label for="comentario">Mensaje</label>
+                <div class="col-md-4">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="email" class="form-control" id="telefono" placeholder="+51 9999-99999">
                 </div>
-                <div class="contactanos__cajaMensaje">
-                    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-                </div>             
-                <!-- Botones-->
-                <div class="contactanos__botones">
-                    <input class="contactanos__boton" type ="submit"  value="Enviar">
-                    <input class="contactanos__boton"type ="reset" value ="Borrar">
+                <div class="col-md-12">
+                    <label for="mensaje" class="form-label">Déjanos un mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3"></textarea>
                 </div>
-                
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
             </form>
+            <h3 class="contactanos__mensaje">
+                Déjanos tus datos junto con un mensaje , y nos comunicaremos contigo a la brevedad. Gracias!
+            </h3>
         </div>
-        <div class="contactanos__mensaje">
-            Déjanos tus datos junto con un mensaje , y nos comunicaremos contigo a la brevedad. Gracias!
-        </div>
-    </section>
-    </header>
-    <!--Fin de Barra de navegación con Logo y páginas-->
     <!-- formulario de contacto-->
      
 

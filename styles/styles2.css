@@ -15,8 +15,9 @@
 /*font para toda la página*/
 body{
     font-family: 'Bebas Neue', cursive;
+    background-color: #F9975D;
 }
-
+/*
 .header{
     display:flex;
     justify-content:space-between;
@@ -28,6 +29,8 @@ body{
     height:8vh;
 
 }
+*/
+/*******NavBar************/
 .navbar-custom{ /*Bootstrap*/
     background-color:#C85C5C !important;
     color:#F9975D !important;
@@ -36,85 +39,12 @@ body{
     color:#F9975D !important;
     font-size: 1.3rem;
 }
-.carousel-caption{
-    position:absolute;
-    bottom:40%;
-    color:#F9975D !important;
-}
-.carousel-control-prev-icon{
-    color:#F9975D !important;
-}
-.carousel-control{
-    color:#F9975D !important;
-}
-
-
-.carruselImagenes_texto{
-    position: absolute;
-    
-    font-family: 'Bebas Neue', cursive;
-    font-size:4rem;
-    color:#F9975D;
-}
-.carruselImagen--size{
-    width:100%;
-    height:50vh;
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 992px) { 
-    .carruselImagen--size{
-        width:100%;
-        height:92vh;
-    }
-
- }
-/*Fin de Medium devices (tablets, 768px and up)*/
-
-.nav{
-    width:100%;
-}
 .header__logoImg{
     width:30px;
     
 }
-
-.header__links{
-    display:flex;
-    
-    align-items:center;
-    width:70%
-    
-
-}
-
-
-.nav__menu{ 
-    display:flex;
-    list-style-type: none;/*Quitar las viñetas de la lista*/
-    justify-content: space-evenly;
-    
-}
-
-.nav__activeLink{
-    text-decoration: underline;
-}
-.nav__menu a { 
-    text-decoration: none;/*Quitar los subrayados de links del menú */
-    font-size:1.3rem;
-    color:#F9975D;
-    
-}
-
-
-
 .nav__img-rssSize{
     width:20px;
-}
-.nav__links:hover{
- color :white;
- cursor:pointer;
- background-color:#B2EA70;
 }
 
 .header__rrss{
@@ -131,18 +61,118 @@ body{
     font-size:1.3rem;
     color:#F9975D;  
 }
+/*******NavBar************/
+.footer{
+    display : flex;
+    background-color:#B2EA70;
+    width:100%;
+    padding:0.5rem 20px;
+    justify-content:space-between;
+    align-items:center;
+    position: absolute;
+    
 
-.carruselImagenes{
-    background-color:#F9975D;
-    height:92vh;
-  
 }
-.carruselImagenes__carrusel{ 
-   display:inline-block;
-   position: relative;
-   text-align: center;
-   width:100%;
+.footer__logoBox{
+    display:flex;
+    height:100%;
+    width:20%;
+    align-items:center;
+    
 }
+.footer__logoImg{
+    width:30px;
+
+
+}
+
+.footer__logoBox a{
+    color:#F9975D;
+    height:100%;
+    padding-left:10px;
+
+}
+.footer__rrss{
+    width:30%;
+    display:flex;
+    justify-content:flex-end;
+
+    
+}
+
+.footer__rrss a{
+    padding-right: 10px;
+    padding-left:10px;
+    color:#F9975D;
+}
+.carousel-caption{ /*Bootstrap*/
+    position:absolute;
+    bottom:40%;
+    color:#F9975D !important;
+}
+.carousel-control-prev-icon{ /*Bootstrap*/
+    color:#F9975D !important;
+}
+.carousel-control{ /*Bootstrap*/
+    color:#F9975D !important;
+}
+
+.carruselImagen--size{
+    width:100%;
+    height:50vh;
+}
+
+.contactanos{
+    background:#F9975D;
+}
+
+.contactanos__titulo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contactanos__mensaje{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*Recetas Mobile*/
+/*---recetas.html---*/
+.recetas{
+    background-color: #F9975D;
+
+}
+
+/* Medium devices (768px and up)*/
+@media (min-width: 768px) { 
+    .contactanos{
+        height:90vh;
+    }
+    
+ }
+/* Desktop devices (992px and up)*/
+@media (min-width: 992px) { 
+    .carruselImagen--size{
+        width:100%;
+        height:92vh;
+        
+    }
+    
+ }/*Fin de Desktop devices (992x and up)*/
+
+
+/* XL Desktop devices (1200px and up)*/
+@media (min-width: 1200px) { 
+
+    .recetas{
+        background-color: #F9975D;
+        height:95vh;
+    }
+
+ } /*Fin XL Desktop devices (1200px and up)*/
+
+
+
+
+
 
 
 
@@ -192,46 +222,7 @@ body{
     font-size:1.5rem;
 }
 
-.footer{
-    display : flex;
-    background-color:#B2EA70;
-    width:100%;
-    padding:0.5rem 20px;
-    justify-content:space-between;
-    align-items:center;
-}
-.footer__logoBox{
-    display:flex;
-    height:100%;
-    width:20%;
-    align-items:center;
-    
-}
-.footer__logoImg{
-    width:30px;
 
-
-}
-
-.footer__logoBox a{
-    color:#F9975D;
-    height:100%;
-    padding-left:10px;
-
-}
-.footer__rrss{
-    width:30%;
-    display:flex;
-    justify-content:flex-end;
-
-    
-}
-
-.footer__rrss a{
-    padding-right: 10px;
-    padding-left:10px;
-    color:#F9975D;
-}
 
 .tami{
     display:grid;
@@ -415,12 +406,7 @@ body{
 }
 
 /*--recetas.html--*/
-.recetas{
-    background-color: #F9975D;
-    height:90vh;
-    
 
-}
 .recetas__titulo{
     display:block;
     font-family: 'Bebas Neue', cursive;
@@ -498,67 +484,6 @@ body{
 }
 /*---contactanos.html---*/
 
-.contactanos{ /*Desktop*/
-    display:grid;
-    grid-template-columns : 1fr 1fr;
-    grid-template-rows : 10vh 70vh 15vh;
-    grid-template-areas: 
-    "titulo titulo"
-    "imagen formulario"
-    "imagen mensaje";
-    background-color: #F9975D;
-    justify-items:center;
-    width:100%;
-    
-}
-
-
-.contactanos__titulo{
-    grid-area:titulo;
-    align-self:center;
-    font-size:2rem;
-    
-}
-.contactanos__inputBox{
-    display:flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-}
-.contactanos__formulario{
-    grid-area:formulario;
-    align-self:center;
-    display:flex;
-}
-.contactanos__imagen{
-    grid-area:imagen;
-}
-.contactanos__imagen--Size{
-    height:100%;
-}
-.contactanos__mensaje{
-    grid-area:mensaje;
-    font-size:1.5rem;
-    text-align:center;
-    width:100%;
-}
-.contactanos__botones{
-    margin-top:10px;
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.contactanos__boton{
-    font-family: 'Bebas Neue', cursive;
-    background-color: #B2EA70;
-    width:150px;
-    animation: moveInBottom 5s ease-out;
-    animation-fill-mode: backwards;
-}
-.contactanos__boton:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
 
 
 
@@ -792,9 +717,7 @@ body{
         transform:rotateY(180deg);
     }
     /*---recetas.html---*/
-    .recetas{
-        background-color: #F9975D;
-    }
+   
 
     .recetas__titulo{
         font-size:1.5rem;
@@ -844,62 +767,6 @@ body{
         padding-bottom:10px;
     }
 
-    /*--contactanos.html*/
-    .contactanos{
-        display:grid;
-        grid-template-columns : 1fr;
-        grid-template-rows : 5vh 40vh 40vh 10vh;
-        grid-template-areas: 
-        "titulo"
-        "imagen"
-        "formulario"
-        "mensaje";
-        background-color: #F9975D;
-        justify-items:center;
-        
-        
-    }
-
-
-
-.contactanos__titulo{
-    font-size:1rem;
-    
-}
-.contactanos__inputBox{
-    display:flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-}
-.contactanos__formulario{
-    grid-area:formulario;
-}
-.contactanos__imagen{
-    display:none;
-    grid-area:imagen;
-}
-.contactanos__imagen--Size{
-    width:100%;
-}
-.contactanos__mensaje{
-    grid-area:mensaje;
-    font-size:1rem;
-    text-align:center;
-    width:100%;
-    text-align:center;
-}
-.contactanos__botones{
-    margin-top:10px;
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.contactanos__boton{
-    font-family: 'Bebas Neue', cursive;
-    background-color: #B2EA70;
-    width:150px;
-}
 }
   /*FIN Smartphones (portrait) ----------- */
 
@@ -939,20 +806,7 @@ body{
         font-size:0.8rem;
     }
       /*--contactanos.html*/
-      .contactanos{
-        display:grid;
-        grid-template-columns : 1fr;
-        grid-template-rows : 5vh 40vh 40vh 10vh;
-        grid-template-areas: 
-        "titulo"
-        "imagen"
-        "formulario"
-        "mensaje";
-        background-color: #F9975D;
-        justify-items:center;
-        
-        
-    }
+
     .tami{
         display:grid;
         grid-template-columns: auto;
@@ -1029,67 +883,11 @@ body{
         text-align: center;
         padding-top:10px;
     }
-    .contactanos{
-        display:grid;
-        grid-template-columns : 1fr;
-        grid-template-rows : 5vh 75vh 10vh;
-        grid-template-areas: 
-        "titulo"
-        "formulario"
-        "mensaje";
-        background-color: #F9975D;
-        justify-items:center;
-        
-        
-        
-    }
-    .contactanos__titulo{
-        font-size:1rem;
-        
-    }
-    .contactanos__inputBox{
-        display:flex;
-        justify-content:space-between;
-        flex-wrap: wrap;
-    }
-    .contactanos__formulario{
-        grid-area:formulario;
-        padding-top:10px;
-        align-self:start;
-        
-        
-    }
-    .contactanos__imagen{
-        display:none;
-    }
-    .contactanos__imagen--Size{
-        width:100%;
-    }
-    .contactanos__mensaje{
-        grid-area:mensaje;
-        font-size:1rem;
-        padding-top:10px;
-        
-        width:100%;
-        text-align:center;
-    }
-    .contactanos__botones{
-        margin-top:10px;
-        display:flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    
-    .contactanos__boton{
-        font-family: 'Bebas Neue', cursive;
-        background-color: #B2EA70;
-        width:150px;
-    }
+
+
 
     /*---recetas.html---*/
-    .recetas{
-        background-color: #F9975D;
-    }
+    
 
     .recetas__titulo{
         font-size:1.5rem;
