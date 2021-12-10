@@ -140,13 +140,18 @@ body{
     background-color: #F9975D;
 
 }
+.recetas__descripcionPostre{
+    font-size:.9rem;
+}
 
 /* Medium devices (768px and up)*/
 @media (min-width: 768px) { 
     .contactanos{
         height:90vh;
     }
-    
+    .recetas__descripcionPostre{
+        font-size:1rem;
+    }
  }
 /* Desktop devices (992px and up)*/
 @media (min-width: 992px) { 
@@ -448,8 +453,8 @@ body{
     text-align: center;
     vertical-align:top;   
     font-family: 'Bebas Neue', cursive;
-    margin-bottom:10px;
-    margin-top:10px;
+    margin-bottom:5px;
+    margin-top:5px;
     
   
 }
@@ -464,7 +469,7 @@ body{
     text-align:center;
     font-size:3rem;
     display: block;
-    margin:10px;
+    margin:5px;
     padding:0;   
     height:40px;
     
@@ -472,7 +477,7 @@ body{
 
 .recetas__linkVideo{
     text-decoration: none;
-    font-size:1.5rem;
+    
 }
 
 .recetas__mensajeFinal{
@@ -482,12 +487,6 @@ body{
     padding-top:10px;
     padding-bottom:10px;
 }
-/*---contactanos.html---*/
-
-
-
-
-
 
 
 /* Smartphones (portrait) ----------- */
@@ -759,6 +758,7 @@ body{
     
     .recetas__linkVideo{
         font-size:1rem;
+        text-decoration: none;
     }
     
     .recetas__mensajeFinal{
@@ -921,7 +921,7 @@ body{
     
     
     .recetas__linkText{
-        font-size:2rem;
+        font-size:1rem;
         margin:5px;
         padding:0;   
         
