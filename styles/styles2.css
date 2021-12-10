@@ -143,7 +143,9 @@ body{
 .recetas__descripcionPostre{
     font-size:.9rem;
 }
-
+.card-body{
+    background:#FBD148; 
+}
 /* Medium devices (768px and up)*/
 @media (min-width: 768px) { 
     .contactanos{
