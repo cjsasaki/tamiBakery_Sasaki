@@ -227,17 +227,17 @@ body{
 .tami{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 4fr auto 3fr; /*4 filas*/
+    grid-template-rows: 10vh 4fr auto; /*4 filas*/
     justify-items: center;
     align-items: center;
     justify-content: stretch;
     grid-template-areas:
     "title title title"
     "photo bio bio"
-    "quote quote quote"
-    "photo2 photo3 photo4";
+    "quote quote quote";
+    /*"photo2 photo3 photo4";*/
     background-color: #F9975D;
-    
+    margin-bottom:20px;
 
 }
 
@@ -577,10 +577,10 @@ body{
         "title"
         "photo"
         "bio"
-        "quote"
-        "photo2"
+        "quote";
+        /*"photo2"
         "photo3" 
-        "photo4";
+        "photo4";*/
         background-color: #F9975D;
         
     
@@ -818,10 +818,10 @@ body{
         "title"
         "photo"
         "bio"
-        "quote"
-        "photo2"
+        "quote";
+        /*"photo2"
         "photo3" 
-        "photo4";
+        "photo4";*/
         background-color: #F9975D;
         
     
