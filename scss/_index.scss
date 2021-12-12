@@ -1,0 +1,79 @@
+/*
+SCSS:
+Para componentes para el index.html
+*/
+.carrusel{
+    &__imagen{
+        width:100%;
+        @media(min-width:$mediumScreen){
+            height:92vh;
+        }
+    }
+    &__caption{
+        text-align:left;
+        position:absolute;
+        bottom:20%;
+        color:$rosadoFuerte;
+        
+        h2{
+            @media(min-width:$largeScreen){
+                font-size: 5rem;
+            }
+        }
+        p{
+            @media(min-width:$largeScreen){
+                font-size: 3rem;
+            }
+        }
+
+    }
+}
+
+
+.masPedido{
+    background-color:$peach;
+    border-bottom:2px solid $rosadoFuerte;
+    padding-top:10px;
+    padding-bottom:10px;
+    
+    &__titulo{
+        vertical-align: middle;
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        padding-top: 20px;
+    }
+    &__productos{
+        display:flex;
+        flex-wrap:wrap;
+        vertical-align:middle;
+        justify-content: space-around;
+    
+    }
+    &__producto{
+        vertical-align:top;
+        display:inline-block;
+        text-align:center;
+        width:250px;
+        margin-left:20px;
+        margin-right:20px;
+        margin-bottom:20px;
+    }
+    &__productoImagen{
+        width:150px;
+        height:150px;
+        @media(min-width:$mediumScreen){
+            width:250px;
+            height:250px;
+        }
+    }
+    &__productoCaption{
+        display:block;
+        font-family: 'Bebas Neue', cursive;
+        color:#F9975D;
+        font-size:1rem;
+        @media(min-width:$largeScreen){
+            font-size:1.5rem;
+        }
+    }
+
+}

@@ -1,0 +1,71 @@
+/*
+SCSS:
+Para componentes compartidos :
+*Header
+*Footer
+*/
+
+/*Navigation Bar*/
+.navbar{ 
+    font-family: 'Bebas Neue', cursive;
+    &__custom{
+        background-color:$rosado ;
+        color:$crema ;
+    }
+
+    &__linkCustom{
+        color:$crema ;
+        font-size: 1.3rem;
+    }
+    &__logoImg{
+        width:30px;
+    }
+    &__rrssLogo{
+        color:$crema;
+    }
+    &__rrssSection{
+        width:100%;
+        @media(min-width:$mediumScreen){
+            width:20%;
+        }
+    }
+    &__rrssSectionLinks{
+        display:flex;
+        justify-content:space-around;
+        width:100%;
+    }
+}
+
+.footer{
+    display : flex;
+    background-color:$rosadoFuerte;
+    width:100%;
+    padding:0.5rem 20px;
+    justify-content:space-between;
+    align-items:center;
+    position: absolute;
+
+    &__logoBox{
+        display:flex;
+        height:100%;
+        width:50%;
+        align-items:center;   
+        a{
+            color:$peach;
+            text-decoration: none;
+        }
+    }
+    
+    &__logoImg{
+        width:30px;
+    }
+    &__rrss{
+        width:30%;
+        display:flex;
+        justify-content:flex-end;
+        }
+
+    }
+   
+
+}
