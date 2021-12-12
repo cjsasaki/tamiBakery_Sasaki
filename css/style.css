@@ -1,18 +1,198 @@
-/* Error: unmatched "}".
- *    ,
- * 71 | }
- *    | ^
- *    '
- *   scss/_shared.scss 71:1  @import
- *   scss/style.scss 9:9     root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: unmatched "}".\a    \2577 \a 71 \2502  }\a    \2502  ^\a    \2575 \a   scss/_shared.scss 71:1  @import\a   scss/style.scss 9:9     root stylesheet';
+/*
+#FFAFAF Rosado 
+#FBFFE2 Crema
+#FFEBCC Peach
+#FF9999 Rosado -2 
+Estilos intentando mobileFirst
+*/
+/*
+#FFAFAF Rosado 
+#FBFFE2 Crema
+#FFEBCC Peach
+#FF9999 Rosado -2 
+*/
+/*
+SCSS:
+Para componentes compartidos :
+*Header
+*Footer
+*/
+/*Navigation Bar*/
+.navbar {
+  font-family: "Bebas Neue", cursive;
 }
+.navbar__custom {
+  background-color: #FFAFAF;
+  color: #FBFFE2;
+}
+.navbar__linkCustom {
+  color: #FBFFE2;
+  font-size: 1.3rem;
+}
+.navbar__logoImg {
+  width: 30px;
+}
+.navbar__rrssLogo {
+  color: #FBFFE2;
+}
+.navbar__rrssSection {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .navbar__rrssSection {
+    width: 20%;
+  }
+}
+.navbar__rrssSectionLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  background-color: #FF9999;
+  width: 100%;
+  padding: 0.5rem 20px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+.footer__logoBox {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  font-size: 0.8rem;
+  padding-left: 10px;
+}
+.footer__logoBox a {
+  color: #FFEBCC;
+  text-decoration: none;
+  padding-left: 10px;
+}
+@media (min-width: 768px) {
+  .footer__logoBox a {
+    height: 100%;
+    font-size: 1rem;
+  }
+}
+.footer__logoImg {
+  width: 30px;
+}
+.footer__rrss {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer__rrss a {
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #FFEBCC;
+}
+@media (min-width: 768px) {
+  .footer__rrss a {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+}
+.footer__rrss__Mensaje {
+  display: none;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .footer__rrss__Mensaje {
+    display: flex;
+  }
+}
+
+/*
+SCSS:
+Para componentes para el index.html
+*/
+.carrusel__imagen {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .carrusel__imagen {
+    height: 92vh;
+  }
+}
+.carrusel__caption {
+  text-align: left;
+  position: absolute;
+  bottom: 20%;
+  color: #FF9999;
+}
+@media (min-width: 992px) {
+  .carrusel__caption h2 {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  .carrusel__caption p {
+    font-size: 3rem;
+  }
+}
+
+.masPedido {
+  background-color: #FFEBCC;
+  border-bottom: 2px solid #FF9999;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.masPedido__titulo {
+  vertical-align: middle;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  padding-top: 20px;
+}
+.masPedido__productos {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  justify-content: space-around;
+}
+.masPedido__producto {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.masPedido__productoImagen {
+  width: 150px;
+  height: 150px;
+}
+@media (min-width: 768px) {
+  .masPedido__productoImagen {
+    width: 250px;
+    height: 250px;
+  }
+}
+.masPedido__productoCaption {
+  display: block;
+  font-family: "Bebas Neue", cursive;
+  color: #F9975D;
+  font-size: 1rem;
+}
+@media (min-width: 992px) {
+  .masPedido__productoCaption {
+    font-size: 1.5rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  /*para utilizar REM*/
+  font-family: "Bebas Neue", cursive;
+}
+
+/*# sourceMappingURL=style.css.map */

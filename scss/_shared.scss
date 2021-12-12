@@ -49,10 +49,17 @@ Para componentes compartidos :
         display:flex;
         height:100%;
         width:50%;
-        align-items:center;   
+        align-items:center; 
+        font-size:0.8rem;  
+        padding-left:10px;
         a{
             color:$peach;
             text-decoration: none;
+            padding-left:10px;
+            @media(min-width:$mediumScreen){
+                height:100%;
+                font-size:1rem
+            } 
         }
     }
     
@@ -63,9 +70,27 @@ Para componentes compartidos :
         width:30%;
         display:flex;
         justify-content:flex-end;
+        align-items:center; 
+        a{
+        padding-right:5px;
+        padding-left:5px;
+        color:$peach;
+            @media(min-width:$mediumScreen){
+                padding-right:10px;
+                padding-left:10px;
+                font-size:1rem;
+            }
         }
-
+        &__Mensaje{
+            display:none;
+            text-decoration: none;
+            @media(min-width:$mediumScreen){
+                display:flex;
+            }   
+        }
     }
+
+    
    
 
 }
