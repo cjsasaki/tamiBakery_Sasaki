@@ -1,0 +1,120 @@
+.tienda{
+    background-color:$peach;
+    &__titulo{
+        display:block;
+        padding-top:10px;
+        padding-bottom:10px;
+        text-align:center;
+
+    }
+    &__productos{
+        width:100%; 
+        display:flex;
+        justify-content: space-around;
+        flex-wrap:wrap;
+        align-items: center;
+    }
+    &__producto{
+        vertical-align:top;
+        display:inline-block;
+        text-align:center;
+        width:150px;
+        margin-left:5px;
+        margin-right:5px;
+        margin-top:10px;
+        margin-bottom:10px;
+        @media(min-width:$mediumScreen){
+            width:250px;
+            margin-left:20px;
+            margin-right:20px;
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        &__card{
+            height:150px;
+            width:150px;
+            position:relative;
+            transition: all 0.5s linear;
+            transform-style:preserve-3d;
+            
+            @media(min-width:$mediumScreen){
+                height:250px;
+                width:250px;
+            }
+            &:hover{
+                transform:rotateY(180deg);
+            }
+
+            &__front{
+                justify-content:center;
+                align-items:center;
+                position:absolute;
+                display:flex;
+                width:100%;
+                height:100%;
+                background:linear-gradient($peach,$rosado);
+                z-index:2;
+                backface-visibility:hidden;
+                &__imagen{
+                    width:150px;
+                    height:150px;
+                    @media(min-width:$mediumScreen){
+                        width:250px;
+                        height:250px;
+                    }
+                }
+            }
+            &__back{
+                justify-content:center;
+                align-items:center;
+                display:flex;
+                flex-flow:column;
+                vertical-align: middle;
+                position:absolute;
+                color:black;
+                width:100%;
+                height:90%;
+                border-radius:10px;
+                background:linear-gradient($peach,$rosado);
+                z-index:1;
+                transform:rotateY(180deg) /*Para que el Back se vea de forma correcta*/
+
+            }
+        }
+        &__caption{
+            display:block;
+            color:black;
+            font-size:1rem;
+            text-decoration:none;
+        }
+    }
+    &__contactanos{
+        display:flex;
+        justify-content: center;
+        margin-top:10px;
+        padding-bottom:10px;
+        text-align: center;
+        @media(min-width:$mediumScreen){
+            margin-top:30px;
+            padding-bottom:20px;
+        }
+
+        &__mensaje{
+            color:black;
+            font-size:1rem;
+            @media(min-width:$mediumScreen){
+                font-size:2rem;
+            }
+        }
+        &__link{
+            color:black;
+            font-size:1rem;
+            /*se deja con el subrayado en el link para que se vea que hay hipervinculo*/
+            @media(min-width:$mediumScreen){
+                font-size:2rem;
+            }
+        }
+
+
+    }
+}

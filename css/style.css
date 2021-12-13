@@ -53,7 +53,7 @@ Para componentes compartidos :
   display: flex;
   background-color: #FF9999;
   width: 100%;
-  padding: 0.5rem 20px;
+  padding: 0.5rem 5px;
   justify-content: space-between;
   align-items: center;
   position: absolute;
@@ -64,12 +64,12 @@ Para componentes compartidos :
   width: 50%;
   align-items: center;
   font-size: 0.8rem;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .footer__logoBox a {
   color: #FFEBCC;
   text-decoration: none;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 @media (min-width: 768px) {
   .footer__logoBox a {
@@ -183,6 +183,132 @@ Para componentes para el index.html
 @media (min-width: 992px) {
   .masPedido__productoCaption {
     font-size: 1.5rem;
+  }
+}
+
+.tienda {
+  background-color: #FFEBCC;
+}
+.tienda__titulo {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.tienda__productos {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.tienda__producto {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .tienda__producto {
+    width: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+.tienda__producto__card {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  transition: all 0.5s linear;
+  transform-style: preserve-3d;
+}
+@media (min-width: 768px) {
+  .tienda__producto__card {
+    height: 250px;
+    width: 250px;
+  }
+}
+.tienda__producto__card:hover {
+  transform: rotateY(180deg);
+}
+.tienda__producto__card__front {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#FFEBCC, #FFAFAF);
+  z-index: 2;
+  backface-visibility: hidden;
+}
+.tienda__producto__card__front__imagen {
+  width: 150px;
+  height: 150px;
+}
+@media (min-width: 768px) {
+  .tienda__producto__card__front__imagen {
+    width: 250px;
+    height: 250px;
+  }
+}
+.tienda__producto__card__back {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  vertical-align: middle;
+  position: absolute;
+  color: black;
+  width: 100%;
+  height: 90%;
+  border-radius: 10px;
+  background: linear-gradient(#FFEBCC, #FFAFAF);
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+.tienda__producto__caption {
+  display: block;
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.tienda__contactanos {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .tienda__contactanos {
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+.tienda__contactanos__mensaje {
+  color: black;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .tienda__contactanos__mensaje {
+    font-size: 2rem;
+  }
+}
+.tienda__contactanos__link {
+  color: black;
+  font-size: 1rem;
+  /*se deja con el subrayado en el link para que se vea que hay hipervinculo*/
+}
+@media (min-width: 768px) {
+  .tienda__contactanos__link {
+    font-size: 2rem;
   }
 }
 
