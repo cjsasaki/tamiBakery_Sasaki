@@ -13,7 +13,7 @@ Para componentes para el index.html
         text-align:left;
         position:absolute;
         bottom:20%;
-        color:$rosadoFuerte;
+        color:black;;
         
         h2{
             @media(min-width:$largeScreen){
@@ -35,6 +35,7 @@ Para componentes para el index.html
     border-bottom:2px solid $rosadoFuerte;
     padding-top:10px;
     padding-bottom:10px;
+    color:black;
     
     &__titulo{
         vertical-align: middle;

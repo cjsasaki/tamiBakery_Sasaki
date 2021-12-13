@@ -124,7 +124,7 @@ Para componentes para el index.html
   text-align: left;
   position: absolute;
   bottom: 20%;
-  color: #FF9999;
+  color: black;
 }
 @media (min-width: 992px) {
   .carrusel__caption h2 {
@@ -142,6 +142,7 @@ Para componentes para el index.html
   border-bottom: 2px solid #FF9999;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: black;
 }
 .masPedido__titulo {
   vertical-align: middle;
