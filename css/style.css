@@ -424,6 +424,131 @@ Para componentes para el index.html
   }
 }
 
+.contactanos {
+  background-color: #FFEBCC;
+}
+
+.contactanos__titulo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contactanos__mensaje {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .recetas {
+    height: 90vh;
+  }
+}
+
+.recetas__titulo {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.recetas__postres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.recetas__postres__postre {
+  vertical-align: top;
+  display: inline-block;
+  width: 600px;
+  text-align: center;
+  margin: 5px;
+}
+
+.recetas__postres__postre__imagen {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .recetas__postres__postre__imagen {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.recetas__postres__postre__texto {
+  display: inline-block;
+  height: auto;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .recetas__postres__postre__texto {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.recetas__postres__postre__texto__titulo {
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .recetas__postres__postre__texto__titulo {
+    font-size: 1.5rem;
+  }
+}
+
+.recetas__postres__postre__texto__descripcion {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .recetas__postres__postre__texto__descripcion {
+    font-size: 1rem;
+  }
+}
+
+.recetas__postres__postre__texto__linkText {
+  text-align: center;
+  font-size: 1rem;
+  display: block;
+  margin: 5px;
+  padding: 0;
+  height: 40px;
+}
+
+@media (min-width: 768px) {
+  .recetas__postres__postre__texto__linkText {
+    font-size: 2rem;
+  }
+}
+
+.recetas__postres__postre__texto__linkVideo {
+  text-decoration: none;
+  color: #FF9999;
+}
+
+.recetas__mensajeFinal {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -432,5 +557,9 @@ Para componentes para el index.html
   font-size: 16px;
   /*para utilizar REM*/
   font-family: 'Bebas Neue', cursive;
+}
+
+body {
+  background-color: #FFEBCC;
 }
 /*# sourceMappingURL=style.css.map */

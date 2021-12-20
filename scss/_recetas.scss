@@ -1,0 +1,81 @@
+.recetas{
+    @media(min-width:$mediumScreen){
+        height:90vh;
+    }
+    &__titulo{
+        display:block;        
+        padding-top:10px;
+        padding-bottom:10px;
+        text-align:center;
+    }
+    &__postres{
+        display:flex;
+        width:100%;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        &__postre{
+            vertical-align:top;
+            display:inline-block;
+            width:600px;
+            text-align: center;
+            margin:5px;
+            &__imagen{
+                width:150px;
+                height:150px;
+                display:inline-block;
+                vertical-align: middle;
+                margin-bottom:10px;
+                margin-top:10px;
+                @media(min-width:$mediumScreen){
+                    width:250px;
+                    height:250px;
+                }
+            }
+            &__texto{
+                display:inline-block;
+                height:auto;
+                text-align: center;
+                vertical-align:top;
+                margin-bottom:5px;
+                margin-top:5px;
+                @media(min-width:$mediumScreen){
+                    width:250px;
+                    height:250px;
+                }
+                &__titulo{
+                    font-size:1rem;
+                    text-align:center;
+                    @media(min-width:$mediumScreen){
+                        font-size:1.5rem;
+                    }
+                }
+                &__descripcion{
+                    font-size:0.9rem;
+                    @media(min-width:$mediumScreen){
+                        font-size:1rem;
+                    }
+                }
+                &__linkText{
+                    text-align:center;
+                    font-size:1rem;
+                    display: block;
+                    margin:5px;
+                    padding:0;   
+                    height:40px;
+                    @media(min-width:$mediumScreen){
+                        font-size:2rem;
+                    }
+                }
+                &__linkVideo{
+                    text-decoration: none;
+                    color:$rosadoFuerte;
+                }
+            }
+        }
+    }
+    &__mensajeFinal{
+        text-align:center;  
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+}

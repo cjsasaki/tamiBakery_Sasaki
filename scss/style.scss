@@ -9,6 +9,8 @@ Estilos intentando mobileFirst
 @import "shared";
 @import "index";
 @import "tienda";
+@import "contactanos";
+@import "recetas";
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +18,10 @@ Estilos intentando mobileFirst
     font-size : 16px; /*para utilizar REM*/
     font-family: 'Bebas Neue', cursive;
    
+}
+
+body{
+    background-color: $peach;
 }
 
 
