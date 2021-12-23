@@ -1,12 +1,14 @@
 .recetas{
+    height:auto;
     @media(min-width:$mediumScreen){
-        height:90vh;
+        
     }
     &__titulo{
         display:block;        
         padding-top:10px;
         padding-bottom:10px;
         text-align:center;
+        
     }
     &__postres{
         display:flex;
