@@ -1,7 +1,7 @@
 .recetas{
     height:auto;
-    @media(min-width:$mediumScreen){
-        
+    @media(min-width:$extraLargeScreen){
+        height:90vh;
     }
     &__titulo{
         display:block;        

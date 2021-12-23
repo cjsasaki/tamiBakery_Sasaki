@@ -438,7 +438,11 @@ Para componentes para el index.html
   margin-bottom: 30px;
 }
 
-@media (min-width: 768px) {
+.recetas {
+  height: auto;
+}
+
+@media (min-width: 1200px) {
   .recetas {
     height: 90vh;
   }
