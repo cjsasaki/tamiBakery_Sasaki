@@ -248,6 +248,114 @@ Para componentes para el index.html
   }
 }
 
+.tami {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  /*4 filas*/
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+      grid-template-areas: "title" "photo" "bio" "quote";
+}
+
+@media (min-width: 1200px) {
+  .tami {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 10vh 4fr auto;
+        grid-template-rows: 10vh 4fr auto;
+    /*4 filas*/
+        grid-template-areas: "title title title" "photo bio bio" "quote quote quote";
+  }
+}
+
+.tami__titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 1200px) {
+  .tami__titulo {
+    font-size: 3rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.tami__photo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: photo;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media (min-width: 992px) {
+  .tami__photo {
+    padding-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.tami__photo__imagen {
+  width: 100%;
+}
+
+.tami__bioText {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: bio;
+  height: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  .tami__bioText {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: bio;
+    height: 100%;
+  }
+}
+
+.tami__quote {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: quote;
+  background-color: #FF9999;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media (min-width: 992px) {
+  .tami__quote {
+    font-size: 4rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 .tienda {
   background-color: #FFEBCC;
 }

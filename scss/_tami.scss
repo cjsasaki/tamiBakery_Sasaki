@@ -1,0 +1,77 @@
+.tami{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto; /*4 filas*/
+    justify-items: center;
+    align-items: center;
+    justify-content: stretch;
+    grid-template-areas:
+        "title"
+        "photo"
+        "bio"
+        "quote";
+    @media(min-width:$extraLargeScreen){
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 10vh 4fr auto; /*4 filas*/
+        grid-template-areas:
+        "title title title"
+        "photo bio bio"
+        "quote quote quote";
+    }
+    
+    &__titulo{
+        grid-area:title;
+        text-align:center;
+        font-size:2rem;
+        padding-top:5px;
+        padding-bottom:5px;
+        @media(min-width:$extraLargeScreen){
+            font-size:3rem;
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-bottom:10px;
+        }    
+    }
+    &__photo{
+        grid-area:photo;
+        padding-left:5px;
+        padding-right:5px;
+        @media(min-width:$largeScreen){
+            padding-bottom:20px;
+            padding-bottom:20px;
+        }
+        &__imagen{
+            width:100%;
+        }
+        
+    }
+    &__bioText{
+        grid-area:bio;
+        height:100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 10px;
+        padding-bottom:10px;
+        @media(min-width:$largeScreen){
+            grid-area:bio;
+            height:100%;
+        }
+    }
+    &__quote{
+        grid-area:quote;
+        background-color:$rosadoFuerte;
+        width:100%;
+        font-size:1.5rem;
+        text-align:center;
+        vertical-align:middle;
+        padding-top:5px;
+        padding-bottom:5px;
+        @media(min-width:$largeScreen){
+            font-size:4rem;
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+    }
+
+}
