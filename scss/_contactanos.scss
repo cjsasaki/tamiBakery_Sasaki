@@ -1,6 +1,8 @@
 .contactanos{
     background-color:$peach;
-
+    @media(min-width:$largeScreen){
+        height:90vh;
+    }
     &__titulo{
         margin-top: 30px;
         margin-bottom: 30px;

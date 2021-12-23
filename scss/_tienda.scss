@@ -19,16 +19,25 @@
         display:inline-block;
         text-align:center;
         width:150px;
+
+        /*
         margin-left:5px;
         margin-right:5px;
         margin-top:10px;
         margin-bottom:10px;
+        */
+        @extend .producto--Margin;
+
         @media(min-width:$mediumScreen){
             width:250px;
+            
+            /*
             margin-left:20px;
             margin-right:20px;
             margin-top:10px;
             margin-bottom:10px;
+            */
+            @extend .producto--MarginMediumUp;
         }
         &__card{
             height:150px;

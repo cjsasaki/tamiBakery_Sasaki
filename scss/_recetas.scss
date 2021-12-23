@@ -22,15 +22,20 @@
             text-align: center;
             margin:5px;
             &__imagen{
+                /*
                 width:150px;
                 height:150px;
+                */
+                @include imagenesSize(150px,150px);
                 display:inline-block;
                 vertical-align: middle;
                 margin-bottom:10px;
                 margin-top:10px;
                 @media(min-width:$mediumScreen){
-                    width:250px;
+                    /*width:250px;
                     height:250px;
+                    */
+                    @include imagenesSize(250px,250px);
                 }
             }
             &__texto{

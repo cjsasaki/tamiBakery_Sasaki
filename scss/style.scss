@@ -6,6 +6,9 @@
 Estilos intentando mobileFirst
 */
 @import "variables";
+@import "maps";
+@import "mixin";
+@import "extend";
 @import "shared";
 @import "index";
 @import "tami";
@@ -22,7 +25,8 @@ Estilos intentando mobileFirst
 }
 
 body{
-    background-color: $peach;
+    /*background-color: $peach;*/
+    background-color:map-get($colores,peach);
 }
 
 

@@ -75,3 +75,21 @@
     }
 
 }
+@each $card,$color in $cardsTami{
+    .card--#{$card}{
+        background-color: $color;
+    }
+}
+/*Esto genera : 
+.card--rosadoFuerte {
+  background-color: #FF9999;
+}
+
+.card--rosado {
+  background-color: #FFAFAF;
+}
+
+.card--crema {
+  background-color: #FBFFE2;
+}
+*/
