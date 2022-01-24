@@ -31,13 +31,13 @@
         @media(min-width:$mediumScreen){
             width:250px;
             
-            /*
+            
             margin-left:20px;
             margin-right:20px;
             margin-top:10px;
             margin-bottom:10px;
-            */
-            @extend .producto--MarginMediumUp;
+            
+            /*@extend .producto--MarginMediumUp;*/
         }
         &__card{
             height:150px;

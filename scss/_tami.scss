@@ -53,10 +53,19 @@
         padding-right: 5px;
         padding-top: 10px;
         padding-bottom:10px;
+        
+
         @media(min-width:$largeScreen){
             grid-area:bio;
             height:100%;
+            line-height: 2;
+            p{
+                font-size: 1.5rem;
+            }
+            
+            
         }
+        
     }
     &__quote{
         grid-area:quote;

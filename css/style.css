@@ -19,13 +19,6 @@ Estilos intentando mobileFirst
   margin-bottom: 10px;
 }
 
-.producto--MarginMediumUp {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 /*
 SCSS:
 Para componentes compartidos :
@@ -347,6 +340,10 @@ Para componentes para el index.html
     -ms-grid-column: 1;
     grid-area: bio;
     height: 100%;
+    line-height: 2;
+  }
+  .tami__bioText p {
+    font-size: 1.5rem;
   }
 }
 
@@ -437,12 +434,11 @@ Para componentes para el index.html
 @media (min-width: 768px) {
   .tienda__producto {
     width: 250px;
-    /*
-            margin-left:20px;
-            margin-right:20px;
-            margin-top:10px;
-            margin-bottom:10px;
-            */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*@extend .producto--MarginMediumUp;*/
   }
 }
 
